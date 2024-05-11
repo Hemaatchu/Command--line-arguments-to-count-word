@@ -19,19 +19,20 @@ Sum the number of words in each line.
 Display the total words in the file.
 ## PROGRAM:
 ```
-fname = input('enter the file name')
-num_words = 0
-with open(fname, 'r') as f:
-  for line in f:
-   words = line.split()
-   num_words+=len(words)
-print('Number of words:',num_words)
+# Program to find the word count using command line arguments
+# Developed by : HEMAVATHY S
+# Register Number : 212223230076
+with open("sys.txt",'r') as fp:
+  msg  = fp.read()
+with open("copytxt",'w') as fp1:
+  fp1.write(msg)
 
 ```
 
 ### OUTPUT:
 
-![WhatsApp Image 2024-05-10 at 7 44 34 PM](https://github.com/Hemaatchu/Command--line-arguments-to-count-word/assets/147328300/3e2d371a-2f0a-48c8-b006-b6ed944931bb)
+![WhatsApp Image 2024-05-10 at 7 53 01 PM (1)](https://github.com/Hemaatchu/Command--line-arguments-to-count-word/assets/147328300/500ed0f2-185d-4272-8ff2-4aac081740bf)
+
 
 
 ## RESULT:
