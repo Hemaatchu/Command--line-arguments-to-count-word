@@ -22,16 +22,20 @@ Display the total words in the file.
 # Program to find the word count using command line arguments
 # Developed by : HEMAVATHY S
 # Register Number : 212223230076
-with open("sys.txt",'r') as fp:
-  msg  = fp.read()
-with open("copytxt",'w') as fp1:
-  fp1.write(msg)
+import sys
+count=0
+with open(sys.argv[1],'r') as f1:
+     for i in fp:
+        words=i.split()
+        count+=len(words)
+print("word count  in file is",count)
 
 ```
 
 ### OUTPUT:
 
-![WhatsApp Image 2024-05-10 at 7 53 01 PM (1)](https://github.com/Hemaatchu/Command--line-arguments-to-count-word/assets/147328300/500ed0f2-185d-4272-8ff2-4aac081740bf)
+![image](https://github.com/Hemaatchu/Command--line-arguments-to-count-word/assets/147328300/b68f9f8e-3b2c-45b7-9ec1-c269a3af9eb6)
+
 
 
 
